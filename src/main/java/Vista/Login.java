@@ -6,6 +6,15 @@ package Vista;
 
 import java.awt.Toolkit;
 import java.awt.Dimension;
+<<<<<<< Updated upstream
+=======
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import Controlador.ControladorLogin;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+>>>>>>> Stashed changes
 /**
  *
  * @author hello
@@ -156,8 +165,24 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+<<<<<<< Updated upstream
         // TODO add your handling code here:
         System.out.println("Hola");
+=======
+        // TODO add your handling code here:        
+        char[] pass = {'r', 's', 't', 'u', 'v'};
+//        Modelo.ModeloConexion.Conectar();
+
+        if(!"".equals(txtUser.getText())){
+             int res = ControladorLogin.Login(txtUser.getText(),pass);
+             if (res == 2) {
+                JOptionPane.showMessageDialog(null, "No se pudo iniciar sesion papure");
+                 
+            }else JOptionPane.showMessageDialog(null, "Login correcto papure");
+         
+       }
+       
+>>>>>>> Stashed changes
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
