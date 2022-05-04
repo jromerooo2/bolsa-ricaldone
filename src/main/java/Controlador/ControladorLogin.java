@@ -4,14 +4,12 @@
  */
 package Controlador;
 
-import Modelo.ModeloLogin;
-
 /**
  *
  * @author hello
  */
 public class ControladorLogin {
-    public static int Login(String user, char []contra) {
-        return ModeloLogin.Login(user, contra);
+    public static int Login(String user, char[] password){
+        return Modelo.ModeloLogin.Login();
     }
 }

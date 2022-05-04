@@ -9,7 +9,7 @@ package Modelo;
  * @author hello
  */
 public class ModeloLogin {
-    public static int Login(String user, char [] pass){
-        return "".equals(user) ? 2:1;
+    public static int Login(){
+        return 1;
     }
 }
