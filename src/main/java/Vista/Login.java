@@ -10,9 +10,15 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import Controlador.ControladorLogin;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+<<<<<<< Updated upstream
 
+=======
+import Controlador.ControladorConexion;
+import java.sql.ResultSet;
+>>>>>>> Stashed changes
 /**
  *
  * @author hello
@@ -32,8 +38,12 @@ public class Login extends javax.swing.JFrame {
         int ancho = h.width;
         int alto = h.height;
         
+<<<<<<< Updated upstream
         setBounds(0, 0, ancho - 400, alto-200);
         
+=======
+        setBounds(0, 0, ancho - 560, alto - 300);
+>>>>>>> Stashed changes
     }
 
     /**
@@ -98,20 +108,27 @@ public class Login extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(123, 123, 123)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(jLabel5))
-                    .addComponent(txtUser)
-                    .addComponent(txtPass)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGap(65, 65, 65)
+                            .addComponent(jLabel2))
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGap(53, 53, 53)
+                            .addComponent(jLabel5))
+                        .addComponent(txtUser, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
+                        .addComponent(txtPass))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< Updated upstream
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(107, Short.MAX_VALUE))
+=======
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(167, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,8 +173,9 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("Hola");
         // TODO add your handling code here:        
-        char[] pass = {'r', 's', 't', 'u', 'v'};
+//        char[] pass = {'r', 's', 't', 'u', 'v'};
 //        Modelo.ModeloConexion.Conectar();
+<<<<<<< Updated upstream
         if(!"".equals(txtUser.getText())){
              int res = ControladorLogin.Login(txtUser.getText(),pass);
              if (res == 2) {
@@ -166,6 +184,32 @@ public class Login extends javax.swing.JFrame {
             }else JOptionPane.showMessageDialog(null, "Login correcto papure");
          
        }
+=======
+
+//        if(!"".equals(txtUser.getText())){
+//             int res = ControladorLogin.Login(txtUser.getText(),pass);
+//             if (res == 2) {
+//                JOptionPane.showMessageDialog(null, "No se pudo iniciar sesion papure");
+//                 
+//            }else JOptionPane.showMessageDialog(null, "Login correcto papure");
+//         
+//       }
+        String bases =""; 
+            
+        try {
+            Statement sql = ControladorConexion.getConection().createStatement();
+            String consulta = "SELECT Department FROM Departments" ;
+            ResultSet res = sql.executeQuery(consulta);
+            
+            while (res.next()) {
+                bases += res.getString(1) + "\n";
+                
+            }
+            JOptionPane.showMessageDialog(null, bases);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+>>>>>>> Stashed changes
        
     }//GEN-LAST:event_jButton1ActionPerformed
 

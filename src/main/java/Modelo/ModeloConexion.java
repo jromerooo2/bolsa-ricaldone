@@ -9,6 +9,25 @@ package Modelo;
  * @author hello
  */
 public class ModeloConexion {
+<<<<<<< Updated upstream
 
+=======
+    
+    Connection conectar = null;
+    
+    public static Connection Conectar() throws Exception {
+        String url = "jdbc:sqlserver://localhost:1433;"
+                + "database=bolsaFinal;"
+                + "user=sa;"
+                + "password=Lem0nCode!;"
+                +"encrypt=true;trustServerCertificate=true";
+        try {
+            Connection con = DriverManager.getConnection(url);
+            return con;
+        } catch (SQLException e) {
+             System.out.println(e.toString());
+             return null;
+        }
+>>>>>>> Stashed changes
     }
 }

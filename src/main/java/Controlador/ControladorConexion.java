@@ -4,10 +4,22 @@
  */
 package Controlador;
 
+<<<<<<< Updated upstream
+=======
+import java.sql.Connection;
+import Modelo.ModeloConexion;
+>>>>>>> Stashed changes
 /**
  *
  * @author hello
  */
 public class ControladorConexion {
+<<<<<<< Updated upstream
     
+=======
+    public static Connection getConection() throws Exception{
+       
+        return ModeloConexion.Conectar();
+    }
+>>>>>>> Stashed changes
 }
