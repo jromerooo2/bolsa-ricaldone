@@ -19,7 +19,7 @@ public class ModeloConexion {
         String url = "jdbc:sqlserver://localhost:1433;"
                 + "database=bolsaFinal;"
                 + "user=sa;"
-                + "password=Lem0nCode!;"
+                + "password=Lem0nCode;"
                 +"encrypt=true;trustServerCertificate=true";
         try {
             Connection con = DriverManager.getConnection(url);
