@@ -4,15 +4,15 @@
  */
 package Modelo;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 /**
  *
  * @author hello
  */
 public class ModeloConexion {
-<<<<<<< Updated upstream
-
-=======
-    
     Connection conectar = null;
     
     public static Connection Conectar() throws Exception {
@@ -28,6 +28,5 @@ public class ModeloConexion {
              System.out.println(e.toString());
              return null;
         }
->>>>>>> Stashed changes
     }
 }

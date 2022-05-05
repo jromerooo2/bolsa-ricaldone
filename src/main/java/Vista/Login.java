@@ -4,21 +4,19 @@
  */
 package Vista;
 
+import Controlador.ControladorConexion;
 import java.awt.Toolkit;
 import java.awt.Dimension;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import Controlador.ControladorLogin;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-<<<<<<< Updated upstream
-
-=======
 import Controlador.ControladorConexion;
 import java.sql.ResultSet;
->>>>>>> Stashed changes
 /**
  *
  * @author hello
@@ -37,13 +35,9 @@ public class Login extends javax.swing.JFrame {
         
         int ancho = h.width;
         int alto = h.height;
-        
-<<<<<<< Updated upstream
+       
         setBounds(0, 0, ancho - 400, alto-200);
         
-=======
-        setBounds(0, 0, ancho - 560, alto - 300);
->>>>>>> Stashed changes
     }
 
     /**
@@ -58,8 +52,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         txtUser = new javax.swing.JTextField();
-        txtPass = new javax.swing.JPasswordField();
-
+        txtPassword = new javax.swing.JPasswordField();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -117,35 +110,29 @@ public class Login extends javax.swing.JFrame {
                             .addGap(53, 53, 53)
                             .addComponent(jLabel5))
                         .addComponent(txtUser, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
-                        .addComponent(txtPass))
+                        .addComponent(txtPassword))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-<<<<<<< Updated upstream
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(107, Short.MAX_VALUE))
-=======
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(167, Short.MAX_VALUE))
->>>>>>> Stashed changes
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
+                .addGap(122, 122, 122)
                 .addComponent(jLabel2)
-                .addGap(28, 28, 28)
-                .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(jLabel5)
                 .addGap(18, 18, 18)
-                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
+                .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel5)
+                .addGap(34, 34, 34)
+                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         txtUser.getAccessibleContext().setAccessibleName("txtUser");
@@ -175,16 +162,6 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:        
 //        char[] pass = {'r', 's', 't', 'u', 'v'};
 //        Modelo.ModeloConexion.Conectar();
-<<<<<<< Updated upstream
-        if(!"".equals(txtUser.getText())){
-             int res = ControladorLogin.Login(txtUser.getText(),pass);
-             if (res == 2) {
-                JOptionPane.showMessageDialog(null, "No se pudo iniciar sesion papure");
-                 
-            }else JOptionPane.showMessageDialog(null, "Login correcto papure");
-         
-       }
-=======
 
 //        if(!"".equals(txtUser.getText())){
 //             int res = ControladorLogin.Login(txtUser.getText(),pass);
@@ -209,7 +186,6 @@ public class Login extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
->>>>>>> Stashed changes
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -231,7 +207,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField txtPass;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
