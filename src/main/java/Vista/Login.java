@@ -17,6 +17,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import Controlador.ControladorConexion;
 import java.sql.ResultSet;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 /**
  *
  * @author hello
@@ -157,36 +158,15 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        System.out.println("Hola");
-        // TODO add your handling code here:        
-//        char[] pass = {'r', 's', 't', 'u', 'v'};
-//        Modelo.ModeloConexion.Conectar();
-
-//        if(!"".equals(txtUser.getText())){
-//             int res = ControladorLogin.Login(txtUser.getText(),pass);
-//             if (res == 2) {
-//                JOptionPane.showMessageDialog(null, "No se pudo iniciar sesion papure");
-//                 
-//            }else JOptionPane.showMessageDialog(null, "Login correcto papure");
-//         
-//       }
-        String bases =""; 
-            
-        try {
-            Statement sql = ControladorConexion.getConection().createStatement();
-            String consulta = "SELECT Department FROM Departments" ;
-            ResultSet res = sql.executeQuery(consulta);
-            
-            while (res.next()) {
-                bases += res.getString(1) + "\n";
-                
-            }
-            JOptionPane.showMessageDialog(null, bases);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
        
+        try {
+            String base = ControladorLogin.Login();
+            JOptionPane.showMessageDialog(null,base);
+        } catch (Exception e) {
+            
+        }
+           
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
