@@ -10,4 +10,22 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.mycompany.bolsa.ricaldone.BolsaRicaldone</exec.mainClass>
     </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>11.1.1.jre17-preview</version>
+        </dependency>
+        <dependency>
+        <groupId>com.google.crypto.tink</groupId>
+        <artifactId>tink</artifactId>
+        <version>1.2.1</version>
+      </dependency>
+      <dependency>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
+          <version>3.6.1</version>
+      </dependency>
+    </dependencies>
 </project>
