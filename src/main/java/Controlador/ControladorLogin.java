@@ -9,7 +9,14 @@ package Controlador;
  * @author hello
  */
 public class ControladorLogin {
-    public static String Login() throws Exception{
-        return Modelo.ModeloLogin.Login();
+    public static int Login(String user, char[] password) throws Exception{
+        String baseString = "";        
+        for (char c : password) {
+            baseString += c+3;
+        }
+        
+        //juanromero
+        System.out.println(baseString);
+        return Modelo.ModeloLogin.Login(user,baseString);        
     }
 }

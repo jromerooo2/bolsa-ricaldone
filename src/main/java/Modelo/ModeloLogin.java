@@ -5,6 +5,8 @@
 package Modelo;
 
 import Controlador.ControladorConexion;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -13,15 +15,15 @@ import java.sql.Statement;
  * @author hello
  */
 public class ModeloLogin {
-    public static String Login() throws Exception{
-            Statement sql = ControladorConexion.getConection().createStatement();
-            String base = "";
-            String consulta = "SELECT Department FROM Departments" ;
-            ResultSet res = sql.executeQuery(consulta);            
-            while (res.next()) {
-                base += res.getString(1) + "\n";                
-            }
-            
-            return base;
+    public static int Login(String user, String password) throws Exception{
+            Connection sql = ControladorConexion.getConection();
+            String squery = "SELECT * FROM userSystems WHERE nameUser= ? AND Pword=?" ;
+            PreparedStatement consult = sql.prepareStatement(squery);
+            consult.setString(1, user);
+            consult.setString(2, password);
+
+            ResultSet res = consult.executeQuery();
+           
+            return res.next()? 1:0;
     }
 }

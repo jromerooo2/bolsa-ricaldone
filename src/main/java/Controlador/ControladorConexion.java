@@ -12,8 +12,7 @@ import Modelo.ModeloConexion;
  */
 public class ControladorConexion {
 
-    public static Connection getConection() throws Exception{
-       
+    public static Connection getConection() throws Exception{      
         return ModeloConexion.Conectar();
     }
 }

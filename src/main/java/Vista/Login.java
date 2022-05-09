@@ -4,20 +4,10 @@
  */
 package Vista;
 
-import Controlador.ControladorConexion;
 import java.awt.Toolkit;
 import java.awt.Dimension;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import Controlador.ControladorLogin;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import Controlador.ControladorConexion;
-import java.sql.ResultSet;
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 /**
  *
  * @author hello
@@ -157,15 +147,24 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt){//GEN-FIRST:event_jButton1ActionPerformed
+       String user;
+       char[] password;
         try {
-            String base = ControladorLogin.Login();
-            JOptionPane.showMessageDialog(null,base);
-        } catch (Exception e) {
+            user = txtUser.getText();
+            password = txtPassword.getPassword();
+            Integer num = ControladorLogin.Login(user, password);
             
+            System.out.println(num);
+            if (num == 1) {
+                JOptionPane.showMessageDialog(null, "Bienvenido");
+            }else{
+                JOptionPane.showMessageDialog(null, "No se pudo papure");
+            }
+            
+        } catch (Exception e) {
+            //TODO: handle exception
         }
-           
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
