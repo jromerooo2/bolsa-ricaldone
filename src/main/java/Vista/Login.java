@@ -17,6 +17,8 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    
+//    
     public Login() {
         initComponents();
         
@@ -155,15 +157,15 @@ public class Login extends javax.swing.JFrame {
             password = txtPassword.getPassword();
             Integer num = ControladorLogin.Login(user, password);
             
-            System.out.println(num);
-            if (num == 1) {
-                JOptionPane.showMessageDialog(null, "Bienvenido");
-            }else{
-                JOptionPane.showMessageDialog(null, "No se pudo papure");
+            if (num != 1) JOptionPane.showMessageDialog(null, "Por favor, verifica tus datos", "Hubo un error!", 0);
+            else {
+                Principal frmPrincipal = new Principal();
+                frmPrincipal.setVisible(true);
             }
             
         } catch (Exception e) {
             //TODO: handle exception
+            JOptionPane.showMessageDialog(null, "e: " + e.getMessage());
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed

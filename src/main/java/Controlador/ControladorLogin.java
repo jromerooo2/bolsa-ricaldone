@@ -16,7 +16,6 @@ public class ControladorLogin {
         }
         
         //juanromero
-        System.out.println(baseString);
         return Modelo.ModeloLogin.Login(user,baseString);        
     }
 }
