@@ -27,6 +27,7 @@ public class Principal extends javax.swing.JFrame {
         int alto = h.height;
         
         setBounds(0, 0, alto, ancho);
+        setTitle("Principal");
     }
 
     /**

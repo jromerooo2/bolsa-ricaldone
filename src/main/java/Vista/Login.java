@@ -7,6 +7,7 @@ package Vista;
 import java.awt.Toolkit;
 import java.awt.Dimension;
 import javax.swing.JOptionPane;
+import Vista.Principal;
 import Controlador.ControladorLogin;
 /**
  *
@@ -30,7 +31,7 @@ public class Login extends javax.swing.JFrame {
         int alto = h.height;
        
         setBounds(0, 0, ancho - 400, alto-200);
-        
+        this.setLocationRelativeTo(null);  // *** this will center your app ***
     }
 
     /**
@@ -159,8 +160,9 @@ public class Login extends javax.swing.JFrame {
             
             if (num != 1) JOptionPane.showMessageDialog(null, "Por favor, verifica tus datos", "Hubo un error!", 0);
             else {
-                Principal frmPrincipal = new Principal();
-                frmPrincipal.setVisible(true);
+                
+                
+                
             }
             
         } catch (Exception e) {
