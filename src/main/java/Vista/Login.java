@@ -84,9 +84,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setBackground(new java.awt.Color(244, 127, 19));
+        jLabel1.setBackground(new java.awt.Color(133, 175, 75));
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(244, 127, 19));
+        jLabel1.setForeground(new java.awt.Color(133, 175, 75));
         jLabel1.setText("¿Olvidaste tu Contraseña?");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -159,10 +159,8 @@ public class Login extends javax.swing.JFrame {
             Integer num = ControladorLogin.Login(user, password);
             
             if (num != 1) JOptionPane.showMessageDialog(null, "Por favor, verifica tus datos", "Hubo un error!", 0);
-            else {
-                
-                
-                
+            else {                
+                JOptionPane.showMessageDialog(null, "Bienvenido", "Hola!", 1);                
             }
             
         } catch (Exception e) {
