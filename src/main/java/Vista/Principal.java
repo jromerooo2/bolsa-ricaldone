@@ -19,7 +19,6 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
-        this.setLocationRelativeTo(this);
    
         
         Toolkit t = Toolkit.getDefaultToolkit();
@@ -46,10 +45,10 @@ public class Principal extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         btnMenu = new javax.swing.JButton();
         btnUsuario = new javax.swing.JButton();
-        btnConfiguracion = new javax.swing.JButton();
         btnEstadisticas = new javax.swing.JButton();
         btnPostulantes = new javax.swing.JButton();
         btnUsuario1 = new javax.swing.JButton();
+        btnPostulantes1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -102,12 +101,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        btnConfiguracion.setBackground(new java.awt.Color(133, 175, 75));
-        btnConfiguracion.setForeground(new java.awt.Color(255, 255, 255));
-        btnConfiguracion.setText("Configuracion");
-        btnConfiguracion.setBorderPainted(false);
-        btnConfiguracion.setContentAreaFilled(false);
-
         btnEstadisticas.setBackground(new java.awt.Color(133, 175, 75));
         btnEstadisticas.setForeground(new java.awt.Color(255, 255, 255));
         btnEstadisticas.setText("Estadisticas");
@@ -128,6 +121,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        btnPostulantes1.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantes1.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantes1.setText("Configuracion");
+        btnPostulantes1.setBorderPainted(false);
+
         javax.swing.GroupLayout PanelMenuLayout = new javax.swing.GroupLayout(PanelMenu);
         PanelMenu.setLayout(PanelMenuLayout);
         PanelMenuLayout.setHorizontalGroup(
@@ -140,7 +138,7 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(btnUsuario1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
                         .addComponent(btnEstadisticas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnPostulantes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnConfiguracion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(btnPostulantes1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelMenuLayout.setVerticalGroup(
@@ -155,9 +153,9 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnPostulantes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnConfiguracion, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnPostulantes1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(134, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(239, 245, 213));
@@ -328,10 +326,10 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelMenu;
-    private javax.swing.JButton btnConfiguracion;
     private javax.swing.JButton btnEstadisticas;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnPostulantes;
+    private javax.swing.JButton btnPostulantes1;
     private javax.swing.JButton btnUsuario;
     private javax.swing.JButton btnUsuario1;
     private javax.swing.JLabel jLabel1;
