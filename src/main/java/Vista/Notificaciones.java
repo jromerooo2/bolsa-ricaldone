@@ -27,11 +27,11 @@ public class Notificaciones extends javax.swing.JFrame {
 
         btnUsuario = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnNotificacionesNoti = new javax.swing.JButton();
+        btnConfiguracionNoti = new javax.swing.JButton();
+        btnUsuarioNoti = new javax.swing.JButton();
+        btnEstadisticasNoti = new javax.swing.JButton();
+        btnPostulantesNoti = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -96,36 +96,56 @@ public class Notificaciones extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(133, 175, 75));
         jPanel2.setPreferredSize(new java.awt.Dimension(253, 579));
 
-        jButton1.setBackground(new java.awt.Color(133, 175, 75));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Notificaciones");
-        jButton1.setBorderPainted(false);
-        jButton1.setPreferredSize(new java.awt.Dimension(72, 22));
-
-        jButton2.setBackground(new java.awt.Color(133, 175, 75));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Configuracion");
-        jButton2.setBorderPainted(false);
-
-        jButton3.setBackground(new java.awt.Color(133, 175, 75));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Usuario");
-        jButton3.setBorderPainted(false);
-
-        jButton4.setBackground(new java.awt.Color(133, 175, 75));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Estadisticas");
-        jButton4.setBorderPainted(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnNotificacionesNoti.setBackground(new java.awt.Color(133, 175, 75));
+        btnNotificacionesNoti.setForeground(new java.awt.Color(255, 255, 255));
+        btnNotificacionesNoti.setText("Notificaciones");
+        btnNotificacionesNoti.setBorderPainted(false);
+        btnNotificacionesNoti.setPreferredSize(new java.awt.Dimension(72, 22));
+        btnNotificacionesNoti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnNotificacionesNotiActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(133, 175, 75));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Postulantes");
-        jButton5.setBorderPainted(false);
+        btnConfiguracionNoti.setBackground(new java.awt.Color(133, 175, 75));
+        btnConfiguracionNoti.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfiguracionNoti.setText("Configuracion");
+        btnConfiguracionNoti.setBorderPainted(false);
+        btnConfiguracionNoti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfiguracionNotiActionPerformed(evt);
+            }
+        });
+
+        btnUsuarioNoti.setBackground(new java.awt.Color(133, 175, 75));
+        btnUsuarioNoti.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarioNoti.setText("Usuario");
+        btnUsuarioNoti.setBorderPainted(false);
+        btnUsuarioNoti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuarioNotiActionPerformed(evt);
+            }
+        });
+
+        btnEstadisticasNoti.setBackground(new java.awt.Color(133, 175, 75));
+        btnEstadisticasNoti.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstadisticasNoti.setText("Estadisticas");
+        btnEstadisticasNoti.setBorderPainted(false);
+        btnEstadisticasNoti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstadisticasNotiActionPerformed(evt);
+            }
+        });
+
+        btnPostulantesNoti.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantesNoti.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantesNoti.setText("Postulantes");
+        btnPostulantesNoti.setBorderPainted(false);
+        btnPostulantesNoti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPostulantesNotiActionPerformed(evt);
+            }
+        });
 
         jButton6.setBackground(new java.awt.Color(133, 175, 75));
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,11 +156,11 @@ public class Notificaciones extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnConfiguracionNoti, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+            .addComponent(btnUsuarioNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnNotificacionesNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnEstadisticasNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnPostulantesNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -152,15 +172,15 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnUsuarioNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNotificacionesNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEstadisticasNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnPostulantesNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnConfiguracionNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -507,12 +527,11 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGap(51, 51, 51)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -569,9 +588,35 @@ public class Notificaciones extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuarioActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btnEstadisticasNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasNotiActionPerformed
+        Principal newfrm = new Principal();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstadisticasNotiActionPerformed
+
+    private void btnUsuarioNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioNotiActionPerformed
+        Usuarios newfrm = new Usuarios();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuarioNotiActionPerformed
+
+    private void btnNotificacionesNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesNotiActionPerformed
+        Notificaciones newfrm = new Notificaciones();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnNotificacionesNotiActionPerformed
+
+    private void btnPostulantesNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesNotiActionPerformed
+        Postulantes newfrm = new Postulantes();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPostulantesNotiActionPerformed
+
+    private void btnConfiguracionNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionNotiActionPerformed
+        Configuracion newfrm = new Configuracion();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnConfiguracionNotiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -609,12 +654,12 @@ public class Notificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfiguracionNoti;
+    private javax.swing.JButton btnEstadisticasNoti;
+    private javax.swing.JButton btnNotificacionesNoti;
+    private javax.swing.JButton btnPostulantesNoti;
     private javax.swing.JButton btnUsuario;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnUsuarioNoti;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

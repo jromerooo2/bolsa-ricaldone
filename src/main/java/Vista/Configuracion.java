@@ -31,11 +31,11 @@ public class Configuracion extends javax.swing.JFrame {
         btnEstadisticas = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        btnUsuario1 = new javax.swing.JButton();
-        btnUsuario3 = new javax.swing.JButton();
-        btnEstadisticas1 = new javax.swing.JButton();
-        btnPostulantes = new javax.swing.JButton();
-        btnPostulantes1 = new javax.swing.JButton();
+        btnUsuarioConfi = new javax.swing.JButton();
+        btnNotificacionesConfi = new javax.swing.JButton();
+        btnEstadisticasConfi = new javax.swing.JButton();
+        btnConfiguracionConfi = new javax.swing.JButton();
+        btnPostulantesConfi = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -82,23 +82,23 @@ public class Configuracion extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(133, 175, 75));
 
-        btnUsuario1.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario1.setText("Usuario");
-        btnUsuario1.setBorderPainted(false);
-        btnUsuario1.addActionListener(new java.awt.event.ActionListener() {
+        btnUsuarioConfi.setBackground(new java.awt.Color(133, 175, 75));
+        btnUsuarioConfi.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarioConfi.setText("Usuario");
+        btnUsuarioConfi.setBorderPainted(false);
+        btnUsuarioConfi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario1ActionPerformed(evt);
+                btnUsuarioConfiActionPerformed(evt);
             }
         });
 
-        btnUsuario3.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario3.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario3.setText("Notificaciones");
-        btnUsuario3.setBorderPainted(false);
-        btnUsuario3.addActionListener(new java.awt.event.ActionListener() {
+        btnNotificacionesConfi.setBackground(new java.awt.Color(133, 175, 75));
+        btnNotificacionesConfi.setForeground(new java.awt.Color(255, 255, 255));
+        btnNotificacionesConfi.setText("Notificaciones");
+        btnNotificacionesConfi.setBorderPainted(false);
+        btnNotificacionesConfi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario3ActionPerformed(evt);
+                btnNotificacionesConfiActionPerformed(evt);
             }
         });
 
@@ -109,53 +109,68 @@ public class Configuracion extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnUsuario3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                    .addComponent(btnUsuario1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnNotificacionesConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                    .addComponent(btnUsuarioConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnUsuarioConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnUsuario3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNotificacionesConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnEstadisticas1.setBackground(new java.awt.Color(133, 175, 75));
-        btnEstadisticas1.setForeground(new java.awt.Color(255, 255, 255));
-        btnEstadisticas1.setText("Estadisticas");
-        btnEstadisticas1.setBorderPainted(false);
+        btnEstadisticasConfi.setBackground(new java.awt.Color(133, 175, 75));
+        btnEstadisticasConfi.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstadisticasConfi.setText("Estadisticas");
+        btnEstadisticasConfi.setBorderPainted(false);
+        btnEstadisticasConfi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstadisticasConfiActionPerformed(evt);
+            }
+        });
 
-        btnPostulantes.setBackground(new java.awt.Color(133, 175, 75));
-        btnPostulantes.setForeground(new java.awt.Color(255, 255, 255));
-        btnPostulantes.setText("Configuracion");
-        btnPostulantes.setBorderPainted(false);
+        btnConfiguracionConfi.setBackground(new java.awt.Color(133, 175, 75));
+        btnConfiguracionConfi.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfiguracionConfi.setText("Configuracion");
+        btnConfiguracionConfi.setBorderPainted(false);
+        btnConfiguracionConfi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfiguracionConfiActionPerformed(evt);
+            }
+        });
 
-        btnPostulantes1.setBackground(new java.awt.Color(133, 175, 75));
-        btnPostulantes1.setForeground(new java.awt.Color(255, 255, 255));
-        btnPostulantes1.setText("Postulantes");
-        btnPostulantes1.setBorderPainted(false);
+        btnPostulantesConfi.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantesConfi.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantesConfi.setText("Postulantes");
+        btnPostulantesConfi.setBorderPainted(false);
+        btnPostulantesConfi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPostulantesConfiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnEstadisticas1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnPostulantes1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnPostulantes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnEstadisticasConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnPostulantesConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnConfiguracionConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEstadisticas1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEstadisticasConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnPostulantes1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnPostulantesConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnPostulantes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnConfiguracionConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -304,22 +319,44 @@ public class Configuracion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuarioActionPerformed
 
-    private void btnUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario1ActionPerformed
+    private void btnUsuarioConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioConfiActionPerformed
+        Usuarios newfrm = new Usuarios();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuarioConfiActionPerformed
 
     private void btnUsuario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuario2ActionPerformed
 
-    private void btnUsuario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario3ActionPerformed
+    private void btnNotificacionesConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesConfiActionPerformed
+        Notificaciones newfrm = new Notificaciones();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnNotificacionesConfiActionPerformed
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
 
     }//GEN-LAST:event_btnMenuActionPerformed
+
+    private void btnEstadisticasConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasConfiActionPerformed
+        Principal newfrm = new Principal();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstadisticasConfiActionPerformed
+
+    private void btnPostulantesConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesConfiActionPerformed
+        Postulantes newfrm = new Postulantes();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPostulantesConfiActionPerformed
+
+    private void btnConfiguracionConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionConfiActionPerformed
+        Configuracion newfrm = new Configuracion();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnConfiguracionConfiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -357,15 +394,15 @@ public class Configuracion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfiguracionConfi;
     private javax.swing.JButton btnEstadisticas;
-    private javax.swing.JButton btnEstadisticas1;
+    private javax.swing.JButton btnEstadisticasConfi;
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton btnPostulantes;
-    private javax.swing.JButton btnPostulantes1;
+    private javax.swing.JButton btnNotificacionesConfi;
+    private javax.swing.JButton btnPostulantesConfi;
     private javax.swing.JButton btnUsuario;
-    private javax.swing.JButton btnUsuario1;
     private javax.swing.JButton btnUsuario2;
-    private javax.swing.JButton btnUsuario3;
+    private javax.swing.JButton btnUsuarioConfi;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;

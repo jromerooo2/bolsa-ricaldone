@@ -44,11 +44,11 @@ public class Principal extends javax.swing.JFrame {
         PanelMenu = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         btnMenu = new javax.swing.JButton();
-        btnUsuario = new javax.swing.JButton();
-        btnEstadisticas = new javax.swing.JButton();
-        btnPostulantes = new javax.swing.JButton();
-        btnUsuario1 = new javax.swing.JButton();
-        btnPostulantes1 = new javax.swing.JButton();
+        btnUsuarioGrafi = new javax.swing.JButton();
+        btnEstadisticasGrafi = new javax.swing.JButton();
+        btnPostulantesGrafi = new javax.swing.JButton();
+        btnNotificacionesGrafi = new javax.swing.JButton();
+        btnConfiguracionGrafi = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -91,40 +91,55 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        btnUsuario.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario.setText("Usuario");
-        btnUsuario.setBorderPainted(false);
-        btnUsuario.addActionListener(new java.awt.event.ActionListener() {
+        btnUsuarioGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnUsuarioGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarioGrafi.setText("Usuario");
+        btnUsuarioGrafi.setBorderPainted(false);
+        btnUsuarioGrafi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuarioActionPerformed(evt);
+                btnUsuarioGrafiActionPerformed(evt);
             }
         });
 
-        btnEstadisticas.setBackground(new java.awt.Color(133, 175, 75));
-        btnEstadisticas.setForeground(new java.awt.Color(255, 255, 255));
-        btnEstadisticas.setText("Estadisticas");
-        btnEstadisticas.setBorderPainted(false);
-
-        btnPostulantes.setBackground(new java.awt.Color(133, 175, 75));
-        btnPostulantes.setForeground(new java.awt.Color(255, 255, 255));
-        btnPostulantes.setText("Postulantes");
-        btnPostulantes.setBorderPainted(false);
-
-        btnUsuario1.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario1.setText("Notificaciones");
-        btnUsuario1.setBorderPainted(false);
-        btnUsuario1.addActionListener(new java.awt.event.ActionListener() {
+        btnEstadisticasGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnEstadisticasGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstadisticasGrafi.setText("Estadisticas");
+        btnEstadisticasGrafi.setBorderPainted(false);
+        btnEstadisticasGrafi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario1ActionPerformed(evt);
+                btnEstadisticasGrafiActionPerformed(evt);
             }
         });
 
-        btnPostulantes1.setBackground(new java.awt.Color(133, 175, 75));
-        btnPostulantes1.setForeground(new java.awt.Color(255, 255, 255));
-        btnPostulantes1.setText("Configuracion");
-        btnPostulantes1.setBorderPainted(false);
+        btnPostulantesGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantesGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantesGrafi.setText("Postulantes");
+        btnPostulantesGrafi.setBorderPainted(false);
+        btnPostulantesGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPostulantesGrafiActionPerformed(evt);
+            }
+        });
+
+        btnNotificacionesGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnNotificacionesGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnNotificacionesGrafi.setText("Notificaciones");
+        btnNotificacionesGrafi.setBorderPainted(false);
+        btnNotificacionesGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNotificacionesGrafiActionPerformed(evt);
+            }
+        });
+
+        btnConfiguracionGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnConfiguracionGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfiguracionGrafi.setText("Configuracion");
+        btnConfiguracionGrafi.setBorderPainted(false);
+        btnConfiguracionGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfiguracionGrafiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelMenuLayout = new javax.swing.GroupLayout(PanelMenu);
         PanelMenu.setLayout(PanelMenuLayout);
@@ -133,12 +148,12 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(PanelMenuLayout.createSequentialGroup()
                 .addGroup(PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnUsuarioGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnUsuario1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                        .addComponent(btnEstadisticas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnPostulantes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnPostulantes1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(btnNotificacionesGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                        .addComponent(btnEstadisticasGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPostulantesGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnConfiguracionGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelMenuLayout.setVerticalGroup(
@@ -146,15 +161,15 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(PanelMenuLayout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnUsuarioGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNotificacionesGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEstadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEstadisticasGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnPostulantes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnPostulantesGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnPostulantes1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnConfiguracionGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(134, Short.MAX_VALUE))
         );
 
@@ -281,13 +296,35 @@ public class Principal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnMenuActionPerformed
 
-    private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuarioActionPerformed
+    private void btnUsuarioGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioGrafiActionPerformed
+        Usuarios newfrm = new Usuarios();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuarioGrafiActionPerformed
 
-    private void btnUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario1ActionPerformed
+    private void btnNotificacionesGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesGrafiActionPerformed
+        Notificaciones newfrm = new Notificaciones();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnNotificacionesGrafiActionPerformed
+
+    private void btnEstadisticasGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasGrafiActionPerformed
+        Principal newfrm = new Principal();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstadisticasGrafiActionPerformed
+
+    private void btnPostulantesGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesGrafiActionPerformed
+        Postulantes newfrm = new Postulantes();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPostulantesGrafiActionPerformed
+
+    private void btnConfiguracionGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionGrafiActionPerformed
+        Configuracion newfrm = new Configuracion();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnConfiguracionGrafiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -326,12 +363,12 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelMenu;
-    private javax.swing.JButton btnEstadisticas;
+    private javax.swing.JButton btnConfiguracionGrafi;
+    private javax.swing.JButton btnEstadisticasGrafi;
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton btnPostulantes;
-    private javax.swing.JButton btnPostulantes1;
-    private javax.swing.JButton btnUsuario;
-    private javax.swing.JButton btnUsuario1;
+    private javax.swing.JButton btnNotificacionesGrafi;
+    private javax.swing.JButton btnPostulantesGrafi;
+    private javax.swing.JButton btnUsuarioGrafi;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

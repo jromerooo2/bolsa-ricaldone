@@ -108,9 +108,9 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel3" max="32767" attributes="0"/>
-              <Component id="btnEstadisticas1" alignment="1" max="32767" attributes="0"/>
-              <Component id="btnPostulantes1" alignment="1" max="32767" attributes="0"/>
-              <Component id="btnPostulantes" alignment="1" max="32767" attributes="0"/>
+              <Component id="btnEstadisticasConfi" alignment="1" max="32767" attributes="0"/>
+              <Component id="btnPostulantesConfi" alignment="1" max="32767" attributes="0"/>
+              <Component id="btnConfiguracionConfi" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -118,11 +118,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnEstadisticas1" min="-2" pref="65" max="-2" attributes="0"/>
+                  <Component id="btnEstadisticasConfi" min="-2" pref="65" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnPostulantes1" min="-2" pref="65" max="-2" attributes="0"/>
+                  <Component id="btnPostulantesConfi" min="-2" pref="65" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnPostulantes" min="-2" pref="65" max="-2" attributes="0"/>
+                  <Component id="btnConfiguracionConfi" min="-2" pref="65" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -142,8 +142,8 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnUsuario3" alignment="1" pref="171" max="32767" attributes="0"/>
-                          <Component id="btnUsuario1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btnNotificacionesConfi" alignment="1" pref="171" max="32767" attributes="0"/>
+                          <Component id="btnUsuarioConfi" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -152,16 +152,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnUsuario1" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="btnUsuarioConfi" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnUsuario3" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="btnNotificacionesConfi" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btnUsuario1">
+            <Component class="javax.swing.JButton" name="btnUsuarioConfi">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4b" green="af" red="85" type="rgb"/>
@@ -173,10 +173,10 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUsuario1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUsuarioConfiActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btnUsuario3">
+            <Component class="javax.swing.JButton" name="btnNotificacionesConfi">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="4b" green="af" red="85" type="rgb"/>
@@ -188,12 +188,12 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUsuario3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNotificacionesConfiActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="btnEstadisticas1">
+        <Component class="javax.swing.JButton" name="btnEstadisticasConfi">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="4b" green="af" red="85" type="rgb"/>
@@ -204,8 +204,11 @@
             <Property name="text" type="java.lang.String" value="Estadisticas"/>
             <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEstadisticasConfiActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnPostulantes">
+        <Component class="javax.swing.JButton" name="btnConfiguracionConfi">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="4b" green="af" red="85" type="rgb"/>
@@ -216,8 +219,11 @@
             <Property name="text" type="java.lang.String" value="Configuracion"/>
             <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnConfiguracionConfiActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnPostulantes1">
+        <Component class="javax.swing.JButton" name="btnPostulantesConfi">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="4b" green="af" red="85" type="rgb"/>
@@ -228,6 +234,9 @@
             <Property name="text" type="java.lang.String" value="Postulantes"/>
             <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPostulantesConfiActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

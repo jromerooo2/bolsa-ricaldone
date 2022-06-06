@@ -29,11 +29,11 @@ public class Postulantes extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         btnMenu = new javax.swing.JButton();
-        btnUsuario2 = new javax.swing.JButton();
-        btnUsuario3 = new javax.swing.JButton();
-        btnUsuario1 = new javax.swing.JButton();
-        btnUsuario4 = new javax.swing.JButton();
-        btnUsuario5 = new javax.swing.JButton();
+        btnUsuarioPostu = new javax.swing.JButton();
+        btnNotificacionesPostu = new javax.swing.JButton();
+        btnEstadisticasPostu = new javax.swing.JButton();
+        btnConfiguracionPostu = new javax.swing.JButton();
+        btnPostulantesPostu = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -77,23 +77,33 @@ public class Postulantes extends javax.swing.JFrame {
             }
         });
 
-        btnUsuario2.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario2.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario2.setText("Usuario");
-        btnUsuario2.setBorderPainted(false);
-        btnUsuario2.addActionListener(new java.awt.event.ActionListener() {
+        btnUsuarioPostu.setBackground(new java.awt.Color(133, 175, 75));
+        btnUsuarioPostu.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarioPostu.setText("Usuario");
+        btnUsuarioPostu.setBorderPainted(false);
+        btnUsuarioPostu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario2ActionPerformed(evt);
+                btnUsuarioPostuActionPerformed(evt);
             }
         });
 
-        btnUsuario3.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario3.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario3.setText("Notificaciones");
-        btnUsuario3.setBorderPainted(false);
-        btnUsuario3.addActionListener(new java.awt.event.ActionListener() {
+        btnNotificacionesPostu.setBackground(new java.awt.Color(133, 175, 75));
+        btnNotificacionesPostu.setForeground(new java.awt.Color(255, 255, 255));
+        btnNotificacionesPostu.setText("Notificaciones");
+        btnNotificacionesPostu.setBorderPainted(false);
+        btnNotificacionesPostu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario3ActionPerformed(evt);
+                btnNotificacionesPostuActionPerformed(evt);
+            }
+        });
+
+        btnEstadisticasPostu.setBackground(new java.awt.Color(133, 175, 75));
+        btnEstadisticasPostu.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstadisticasPostu.setText("Estadisticas");
+        btnEstadisticasPostu.setBorderPainted(false);
+        btnEstadisticasPostu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstadisticasPostuActionPerformed(evt);
             }
         });
 
@@ -106,9 +116,11 @@ public class Postulantes extends javax.swing.JFrame {
                 .addComponent(btnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(btnUsuario3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                    .addComponent(btnUsuario2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnNotificacionesPostu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                        .addComponent(btnUsuarioPostu, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnEstadisticasPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 12, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -117,39 +129,31 @@ public class Postulantes extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(btnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnUsuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnUsuarioPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNotificacionesPostu, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUsuario3, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                .addComponent(btnEstadisticasPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        btnUsuario1.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario1.setText("Configuracion");
-        btnUsuario1.setBorderPainted(false);
-        btnUsuario1.addActionListener(new java.awt.event.ActionListener() {
+        btnConfiguracionPostu.setBackground(new java.awt.Color(133, 175, 75));
+        btnConfiguracionPostu.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfiguracionPostu.setText("Configuracion");
+        btnConfiguracionPostu.setBorderPainted(false);
+        btnConfiguracionPostu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario1ActionPerformed(evt);
+                btnConfiguracionPostuActionPerformed(evt);
             }
         });
 
-        btnUsuario4.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario4.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario4.setText("Estadisticas");
-        btnUsuario4.setBorderPainted(false);
-        btnUsuario4.addActionListener(new java.awt.event.ActionListener() {
+        btnPostulantesPostu.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantesPostu.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantesPostu.setText("Postulantes");
+        btnPostulantesPostu.setBorderPainted(false);
+        btnPostulantesPostu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario4ActionPerformed(evt);
-            }
-        });
-
-        btnUsuario5.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuario5.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuario5.setText("Estadisticas");
-        btnUsuario5.setBorderPainted(false);
-        btnUsuario5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuario5ActionPerformed(evt);
+                btnPostulantesPostuActionPerformed(evt);
             }
         });
 
@@ -157,21 +161,21 @@ public class Postulantes extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnUsuario5, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(btnUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(btnUsuario4, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnConfiguracionPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPostulantesPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUsuario4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUsuario5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPostulantesPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnConfiguracionPostu, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -441,30 +445,40 @@ public class Postulantes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario1ActionPerformed
+    private void btnConfiguracionPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionPostuActionPerformed
+        Configuracion newfrm = new Configuracion();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnConfiguracionPostuActionPerformed
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
 
     }//GEN-LAST:event_btnMenuActionPerformed
 
-    private void btnUsuario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario2ActionPerformed
+    private void btnUsuarioPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioPostuActionPerformed
+        Usuarios newfrm = new Usuarios();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuarioPostuActionPerformed
 
-    private void btnUsuario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario3ActionPerformed
+    private void btnNotificacionesPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesPostuActionPerformed
+        Notificaciones newfrm = new Notificaciones();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnNotificacionesPostuActionPerformed
 
-    private void btnUsuario4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario4ActionPerformed
+    private void btnEstadisticasPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasPostuActionPerformed
+        Principal newfrm = new Principal();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstadisticasPostuActionPerformed
 
-    private void btnUsuario5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuario5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsuario5ActionPerformed
+    private void btnPostulantesPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesPostuActionPerformed
+        Postulantes newfrm = new Postulantes();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPostulantesPostuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -502,12 +516,12 @@ public class Postulantes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfiguracionPostu;
+    private javax.swing.JButton btnEstadisticasPostu;
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton btnUsuario1;
-    private javax.swing.JButton btnUsuario2;
-    private javax.swing.JButton btnUsuario3;
-    private javax.swing.JButton btnUsuario4;
-    private javax.swing.JButton btnUsuario5;
+    private javax.swing.JButton btnNotificacionesPostu;
+    private javax.swing.JButton btnPostulantesPostu;
+    private javax.swing.JButton btnUsuarioPostu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
