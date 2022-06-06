@@ -15,6 +15,10 @@ public class Configuracion extends javax.swing.JFrame {
      */
     public Configuracion() {
         initComponents();
+        
+        setTitle("Configuración");
+        this.setLocationRelativeTo(null);  // *** this will center your app ***
+    
     }
 
     /**
@@ -36,7 +40,7 @@ public class Configuracion extends javax.swing.JFrame {
         btnEstadisticasConfi = new javax.swing.JButton();
         btnConfiguracionConfi = new javax.swing.JButton();
         btnPostulantesConfi = new javax.swing.JButton();
-        btnSalirPostu = new javax.swing.JButton();
+        btnSalirConfi = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -153,10 +157,10 @@ public class Configuracion extends javax.swing.JFrame {
             }
         });
 
-        btnSalirPostu.setText("Salir");
-        btnSalirPostu.addActionListener(new java.awt.event.ActionListener() {
+        btnSalirConfi.setText("Salir");
+        btnSalirConfi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirPostuActionPerformed(evt);
+                btnSalirConfiActionPerformed(evt);
             }
         });
 
@@ -170,7 +174,7 @@ public class Configuracion extends javax.swing.JFrame {
             .addComponent(btnConfiguracionConfi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnSalirPostu)
+                .addComponent(btnSalirConfi)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -184,7 +188,7 @@ public class Configuracion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnConfiguracionConfi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSalirPostu)
+                .addComponent(btnSalirConfi)
                 .addContainerGap())
         );
 
@@ -372,11 +376,11 @@ public class Configuracion extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnConfiguracionConfiActionPerformed
 
-    private void btnSalirPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirPostuActionPerformed
+    private void btnSalirConfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirConfiActionPerformed
         Login newFrm  = new Login();
         newFrm.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnSalirPostuActionPerformed
+    }//GEN-LAST:event_btnSalirConfiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -420,7 +424,7 @@ public class Configuracion extends javax.swing.JFrame {
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnNotificacionesConfi;
     private javax.swing.JButton btnPostulantesConfi;
-    private javax.swing.JButton btnSalirPostu;
+    private javax.swing.JButton btnSalirConfi;
     private javax.swing.JButton btnUsuario;
     private javax.swing.JButton btnUsuario2;
     private javax.swing.JButton btnUsuarioConfi;

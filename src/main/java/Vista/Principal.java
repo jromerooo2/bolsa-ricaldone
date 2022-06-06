@@ -24,12 +24,8 @@ public class Principal extends javax.swing.JFrame {
         Toolkit t = Toolkit.getDefaultToolkit();
     
         Dimension h = t.getScreenSize();
-        
-        int ancho = h.width;
-        int alto = h.height;
-        
-        setBounds(0, 0, alto, ancho);
         setTitle("Principal");
+        this.setLocationRelativeTo(null);  // *** this will center your app ***
     }
 
     /**
@@ -314,7 +310,6 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnUsuarioGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioGrafiActionPerformed

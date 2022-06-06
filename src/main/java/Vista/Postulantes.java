@@ -15,6 +15,9 @@ public class Postulantes extends javax.swing.JFrame {
      */
     public Postulantes() {
         initComponents();
+        
+        setTitle("Postulantes");
+        this.setLocationRelativeTo(null);  // *** this will center your app ***
     }
 
     /**

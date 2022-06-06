@@ -14,6 +14,9 @@ public class Notificaciones extends javax.swing.JFrame {
     /** Creates new form Notificaciones */
     public Notificaciones() {
         initComponents();
+        
+        setTitle("Notificaciones");
+        this.setLocationRelativeTo(null);  // *** this will center your app ***
     }
 
     /** This method is called from within the constructor to
@@ -33,7 +36,7 @@ public class Notificaciones extends javax.swing.JFrame {
         btnEstadisticasNoti = new javax.swing.JButton();
         btnPostulantesNoti = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnSalirNoti = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -153,10 +156,10 @@ public class Notificaciones extends javax.swing.JFrame {
         jButton6.setText("Menu");
         jButton6.setBorderPainted(false);
 
-        jButton2.setText("Salir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnSalirNoti.setText("Salir");
+        btnSalirNoti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnSalirNotiActionPerformed(evt);
             }
         });
 
@@ -175,7 +178,7 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton2)
+                .addComponent(btnSalirNoti)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -194,7 +197,7 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnConfiguracionNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(btnSalirNoti)
                 .addContainerGap())
         );
 
@@ -632,11 +635,11 @@ public class Notificaciones extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnConfiguracionNotiActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnSalirNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirNotiActionPerformed
         Login newFrm  = new Login();
         newFrm.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnSalirNotiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -678,9 +681,9 @@ public class Notificaciones extends javax.swing.JFrame {
     private javax.swing.JButton btnEstadisticasNoti;
     private javax.swing.JButton btnNotificacionesNoti;
     private javax.swing.JButton btnPostulantesNoti;
+    private javax.swing.JButton btnSalirNoti;
     private javax.swing.JButton btnUsuario;
     private javax.swing.JButton btnUsuarioNoti;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
