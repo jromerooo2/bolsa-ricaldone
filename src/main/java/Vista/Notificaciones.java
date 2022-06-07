@@ -43,11 +43,11 @@ public class Notificaciones extends javax.swing.JFrame {
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -230,9 +230,13 @@ public class Notificaciones extends javax.swing.JFrame {
             .addGap(0, 32, Short.MAX_VALUE)
         );
 
-        jLabel1.setText("Nombre");
+        jPanel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel10MouseClicked(evt);
+            }
+        });
 
-        jLabel2.setText("Correo electronico");
+        jLabel1.setText("Juan Romero");
 
         jLabel5.setText("Solicitud de curriculum y informacion del contratista");
 
@@ -241,6 +245,9 @@ public class Notificaciones extends javax.swing.JFrame {
         jLabel7.setText("Fecha");
 
         jLabel20.setText("Solicitud de curriculum");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setText("juanromero@gmail.com");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -251,11 +258,11 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addGap(290, 290, 290)
+                .addGap(267, 267, 267)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7))
@@ -273,22 +280,28 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel2)))
+                        .addComponent(jLabel5))
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel7)))
+                        .addGap(11, 11, 11)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel2))))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
+
+        jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel11MouseClicked(evt);
+            }
+        });
 
         jLabel9.setText("Fecha");
 
         jLabel11.setText("Hora");
 
-        jLabel18.setText("Nombre");
+        jLabel18.setText("Juan Romero");
 
-        jLabel19.setText("Correo electronico");
+        jLabel19.setText("juanromero@gmail.com");
 
         jLabel4.setText("Solicitud de curriculum");
 
@@ -334,13 +347,19 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
+        jPanel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel12MouseClicked(evt);
+            }
+        });
+
         jLabel10.setText("Fecha");
 
         jLabel8.setText("Hora");
 
-        jLabel22.setText("Nombre");
+        jLabel22.setText("Juan Romero");
 
-        jLabel23.setText("Correo electronico");
+        jLabel23.setText("juanromero@gmail.com");
 
         jLabel24.setText("Solicitud de curriculum");
 
@@ -381,13 +400,19 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
+        jPanel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel13MouseClicked(evt);
+            }
+        });
+
         jLabel12.setText("Fecha");
 
         jLabel13.setText("Hora");
 
-        jLabel26.setText("Nombre");
+        jLabel26.setText("Juan Romero");
 
-        jLabel31.setText("Correo electronico");
+        jLabel31.setText("juanromero@gmail.com");
 
         jLabel32.setText("Solicitud de curriculum");
 
@@ -428,13 +453,19 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
+        jPanel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel14MouseClicked(evt);
+            }
+        });
+
         jLabel14.setText("Fecha");
 
         jLabel15.setText("Hora");
 
-        jLabel28.setText("Nombre");
+        jLabel28.setText("Juan Romero");
 
-        jLabel27.setText("Correo electronico");
+        jLabel27.setText("juanromero@gmail.com");
 
         jLabel33.setText("Solicitud de curriculum y informacion del contratista");
 
@@ -475,13 +506,19 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
+        jPanel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel15MouseClicked(evt);
+            }
+        });
+
         jLabel16.setText("Fecha");
 
         jLabel17.setText("Hora");
 
-        jLabel29.setText("Nombre");
+        jLabel29.setText("Juan Romero");
 
-        jLabel30.setText("Correo electronico");
+        jLabel30.setText("juanromero@gmail.com");
 
         jLabel36.setText("Solicitud de curriculum");
 
@@ -572,7 +609,7 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -640,6 +677,42 @@ public class Notificaciones extends javax.swing.JFrame {
         newFrm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSalirNotiActionPerformed
+
+    private void jPanel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel10MouseClicked
+
+    private void jPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel11MouseClicked
+
+    private void jPanel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel12MouseClicked
+
+    private void jPanel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel13MouseClicked
+
+    private void jPanel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel14MouseClicked
+
+    private void jPanel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel15MouseClicked
+        NotificacionesMsj newFrm  = new NotificacionesMsj();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jPanel15MouseClicked
 
     /**
      * @param args the command line arguments
