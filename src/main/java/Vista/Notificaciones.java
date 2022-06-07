@@ -29,14 +29,6 @@ public class Notificaciones extends javax.swing.JFrame {
     private void initComponents() {
 
         btnUsuario = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        btnNotificacionesNoti = new javax.swing.JButton();
-        btnConfiguracionNoti = new javax.swing.JButton();
-        btnUsuarioNoti = new javax.swing.JButton();
-        btnEstadisticasNoti = new javax.swing.JButton();
-        btnPostulantesNoti = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        btnSalirNoti = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -84,6 +76,15 @@ public class Notificaciones extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
+        PanelMenu3 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        btnMenu3 = new javax.swing.JButton();
+        btnUsuarioGrafi = new javax.swing.JButton();
+        btnEstadisticasGrafi = new javax.swing.JButton();
+        btnPostulantesGrafi = new javax.swing.JButton();
+        btnNotificacionesGrafi = new javax.swing.JButton();
+        btnConfiguracionGrafi = new javax.swing.JButton();
+        btnSalirPostu = new javax.swing.JButton();
 
         btnUsuario.setBackground(new java.awt.Color(133, 175, 75));
         btnUsuario.setForeground(new java.awt.Color(255, 255, 255));
@@ -96,110 +97,6 @@ public class Notificaciones extends javax.swing.JFrame {
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel2.setBackground(new java.awt.Color(133, 175, 75));
-        jPanel2.setPreferredSize(new java.awt.Dimension(253, 579));
-
-        btnNotificacionesNoti.setBackground(new java.awt.Color(133, 175, 75));
-        btnNotificacionesNoti.setForeground(new java.awt.Color(255, 255, 255));
-        btnNotificacionesNoti.setText("Notificaciones");
-        btnNotificacionesNoti.setBorderPainted(false);
-        btnNotificacionesNoti.setPreferredSize(new java.awt.Dimension(72, 22));
-        btnNotificacionesNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNotificacionesNotiActionPerformed(evt);
-            }
-        });
-
-        btnConfiguracionNoti.setBackground(new java.awt.Color(133, 175, 75));
-        btnConfiguracionNoti.setForeground(new java.awt.Color(255, 255, 255));
-        btnConfiguracionNoti.setText("Configuracion");
-        btnConfiguracionNoti.setBorderPainted(false);
-        btnConfiguracionNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConfiguracionNotiActionPerformed(evt);
-            }
-        });
-
-        btnUsuarioNoti.setBackground(new java.awt.Color(133, 175, 75));
-        btnUsuarioNoti.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsuarioNoti.setText("Usuario");
-        btnUsuarioNoti.setBorderPainted(false);
-        btnUsuarioNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsuarioNotiActionPerformed(evt);
-            }
-        });
-
-        btnEstadisticasNoti.setBackground(new java.awt.Color(133, 175, 75));
-        btnEstadisticasNoti.setForeground(new java.awt.Color(255, 255, 255));
-        btnEstadisticasNoti.setText("Estadisticas");
-        btnEstadisticasNoti.setBorderPainted(false);
-        btnEstadisticasNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEstadisticasNotiActionPerformed(evt);
-            }
-        });
-
-        btnPostulantesNoti.setBackground(new java.awt.Color(133, 175, 75));
-        btnPostulantesNoti.setForeground(new java.awt.Color(255, 255, 255));
-        btnPostulantesNoti.setText("Postulantes");
-        btnPostulantesNoti.setBorderPainted(false);
-        btnPostulantesNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPostulantesNotiActionPerformed(evt);
-            }
-        });
-
-        jButton6.setBackground(new java.awt.Color(133, 175, 75));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Menu");
-        jButton6.setBorderPainted(false);
-
-        btnSalirNoti.setText("Salir");
-        btnSalirNoti.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirNotiActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnConfiguracionNoti, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
-            .addComponent(btnUsuarioNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnNotificacionesNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnEstadisticasNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnPostulantesNoti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnSalirNoti)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnUsuarioNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnNotificacionesNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEstadisticasNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnPostulantesNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnConfiguracionNoti, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSalirNoti)
-                .addContainerGap())
-        );
 
         jPanel3.setMinimumSize(new java.awt.Dimension(993, 380));
 
@@ -609,7 +506,135 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        PanelMenu3.setBackground(new java.awt.Color(133, 175, 75));
+
+        jPanel16.setBackground(new java.awt.Color(133, 175, 75));
+
+        btnMenu3.setBackground(new java.awt.Color(133, 175, 75));
+        btnMenu3.setForeground(new java.awt.Color(255, 255, 255));
+        btnMenu3.setText("Menu");
+        btnMenu3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 10));
+        btnMenu3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        btnMenu3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnMenu3, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnMenu3, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        btnUsuarioGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnUsuarioGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarioGrafi.setText("Usuario");
+        btnUsuarioGrafi.setBorderPainted(false);
+        btnUsuarioGrafi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnUsuarioGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuarioGrafiActionPerformed(evt);
+            }
+        });
+
+        btnEstadisticasGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnEstadisticasGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnEstadisticasGrafi.setText("Estadisticas");
+        btnEstadisticasGrafi.setBorderPainted(false);
+        btnEstadisticasGrafi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnEstadisticasGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstadisticasGrafiActionPerformed(evt);
+            }
+        });
+
+        btnPostulantesGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnPostulantesGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnPostulantesGrafi.setText("Postulantes");
+        btnPostulantesGrafi.setBorderPainted(false);
+        btnPostulantesGrafi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnPostulantesGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPostulantesGrafiActionPerformed(evt);
+            }
+        });
+
+        btnNotificacionesGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnNotificacionesGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnNotificacionesGrafi.setText("Notificaciones");
+        btnNotificacionesGrafi.setBorderPainted(false);
+        btnNotificacionesGrafi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnNotificacionesGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNotificacionesGrafiActionPerformed(evt);
+            }
+        });
+
+        btnConfiguracionGrafi.setBackground(new java.awt.Color(133, 175, 75));
+        btnConfiguracionGrafi.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfiguracionGrafi.setText("Configuracion");
+        btnConfiguracionGrafi.setBorderPainted(false);
+        btnConfiguracionGrafi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnConfiguracionGrafi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfiguracionGrafiActionPerformed(evt);
+            }
+        });
+
+        btnSalirPostu.setText("Salir");
+        btnSalirPostu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirPostuActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelMenu3Layout = new javax.swing.GroupLayout(PanelMenu3);
+        PanelMenu3.setLayout(PanelMenu3Layout);
+        PanelMenu3Layout.setHorizontalGroup(
+            PanelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnUsuarioGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(PanelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addComponent(btnNotificacionesGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                .addComponent(btnEstadisticasGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPostulantesGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnConfiguracionGrafi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(PanelMenu3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnSalirPostu))
+        );
+        PanelMenu3Layout.setVerticalGroup(
+            PanelMenu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelMenu3Layout.createSequentialGroup()
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnUsuarioGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNotificacionesGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEstadisticasGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPostulantesGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnConfiguracionGrafi, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnSalirPostu)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -617,7 +642,8 @@ public class Notificaciones extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(PanelMenu3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -629,10 +655,8 @@ public class Notificaciones extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(PanelMenu3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -641,42 +665,6 @@ public class Notificaciones extends javax.swing.JFrame {
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnUsuarioActionPerformed
-
-    private void btnEstadisticasNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasNotiActionPerformed
-        Principal newfrm = new Principal();
-        newfrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnEstadisticasNotiActionPerformed
-
-    private void btnUsuarioNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioNotiActionPerformed
-        Usuarios newfrm = new Usuarios();
-        newfrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnUsuarioNotiActionPerformed
-
-    private void btnNotificacionesNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesNotiActionPerformed
-        Notificaciones newfrm = new Notificaciones();
-        newfrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnNotificacionesNotiActionPerformed
-
-    private void btnPostulantesNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesNotiActionPerformed
-        Postulantes newfrm = new Postulantes();
-        newfrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnPostulantesNotiActionPerformed
-
-    private void btnConfiguracionNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionNotiActionPerformed
-        Configuracion newfrm = new Configuracion();
-        newfrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnConfiguracionNotiActionPerformed
-
-    private void btnSalirNotiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirNotiActionPerformed
-        Login newFrm  = new Login();
-        newFrm.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnSalirNotiActionPerformed
 
     private void jPanel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseClicked
         NotificacionesMsj newFrm  = new NotificacionesMsj();
@@ -714,6 +702,46 @@ public class Notificaciones extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jPanel15MouseClicked
 
+    private void btnMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMenu3ActionPerformed
+
+    private void btnUsuarioGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioGrafiActionPerformed
+        Usuarios newfrm = new Usuarios();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuarioGrafiActionPerformed
+
+    private void btnEstadisticasGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasGrafiActionPerformed
+        Principal newfrm = new Principal();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstadisticasGrafiActionPerformed
+
+    private void btnPostulantesGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPostulantesGrafiActionPerformed
+        Postulantes newfrm = new Postulantes();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPostulantesGrafiActionPerformed
+
+    private void btnNotificacionesGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotificacionesGrafiActionPerformed
+        Notificaciones newfrm = new Notificaciones();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnNotificacionesGrafiActionPerformed
+
+    private void btnConfiguracionGrafiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfiguracionGrafiActionPerformed
+        Configuracion newfrm = new Configuracion();
+        newfrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnConfiguracionGrafiActionPerformed
+
+    private void btnSalirPostuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirPostuActionPerformed
+        Login newFrm  = new Login();
+        newFrm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSalirPostuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -750,14 +778,15 @@ public class Notificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConfiguracionNoti;
-    private javax.swing.JButton btnEstadisticasNoti;
-    private javax.swing.JButton btnNotificacionesNoti;
-    private javax.swing.JButton btnPostulantesNoti;
-    private javax.swing.JButton btnSalirNoti;
+    private javax.swing.JPanel PanelMenu3;
+    private javax.swing.JButton btnConfiguracionGrafi;
+    private javax.swing.JButton btnEstadisticasGrafi;
+    private javax.swing.JButton btnMenu3;
+    private javax.swing.JButton btnNotificacionesGrafi;
+    private javax.swing.JButton btnPostulantesGrafi;
+    private javax.swing.JButton btnSalirPostu;
     private javax.swing.JButton btnUsuario;
-    private javax.swing.JButton btnUsuarioNoti;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnUsuarioGrafi;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -802,7 +831,7 @@ public class Notificaciones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
